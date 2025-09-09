@@ -15,6 +15,8 @@ It focuses on **immediate mode rendering**, giving users an interactive way to a
 * 🗑️ **Delete** shapes from the scene
 * 📋 **Duplicate** shapes easily
 * ⌨️ **Key shortcut support** for faster interactions
+* 🖱️ **Mouse interaction support** (move camera, select objects)
+* 🎛️ **Shape property editing** including textures
 
 ## 💡 Future Improvements
 
@@ -26,21 +28,24 @@ Here’s a list of features I plan to implement or encourage others to contribut
 * ↩️ Undo/redo functionality
 * 🌐 Support for planes and other primitives
 * 📂 3D file import (OBJ, STL, PLY, etc.)
+* 💾 Save feature (in progress)
 * 💾 Save/load/export current scenes or layouts
 
 ## 🎮 Controls Overview (Key Shortcuts)
 
-| Action          | Shortcut/Interaction |
-| --------------- | -------------------- |
-| Add shape       | Via GUI or key bind  |
-| Move shape      | Arrow keys / GUI     |
-| Rotate shape    | R key or GUI slider  |
-| Change color    | Use CTkColorPicker   |
-| Duplicate shape | D key                |
-| Delete shape    | Del key              |
-| Apply texture   | From file chooser    |
-
-*Mouse interaction support planned for future.*
+| Action                          | Shortcut/Interaction       |
+| ------------------------------- | -------------------------- |
+| Add shape                       | Via GUI through dropdown   |
+| Move shape                      | Arrow keys / GUI           |
+| Move shape up/down in 3D space  | Z + Up/Down keys           |
+| Rotate shape                    | R + Moues movement         |
+| Change color                    | Inside properties          |
+| Change texture                  | From file picker           |
+| Edit shape properties           | Object selection GUI       |
+| Duplicate shape                 | D key                      |
+| Delete shape                    | Del key                    |
+| Interact with object            | Click on object            |
+| Move camera                     | Right-click + drag         |
 
 ## 📸 Images
 
@@ -48,9 +53,13 @@ Here’s a list of features I plan to implement or encourage others to contribut
 | ------------- | --------------------- |
 | ![UI](UI.png) | ![Blocks](Blocks.png) |
 
+## 🐛 Known Bugs
+
+* ❌ Texture not being applied correctly
+
 ## 📦 Prerequisites
 
-* Python 3.8 or later
+* Python 3.10 or later
 * pip
 * (Optional) virtualenv for isolated setup
 
@@ -61,7 +70,7 @@ Here’s a list of features I plan to implement or encourage others to contribut
    ```bash
    git clone https://github.com/your-username/3D-Shape-Drawer.git
    cd 3D-Shape-Drawer
-   ```
+````
 
 2. **Install required packages**:
 
@@ -77,7 +86,7 @@ Simply run:
 python app.py
 ```
 
-You should now see the main GUI window with a 3D rendering canvas. Add and manipulate shapes using the buttons and available tools.
+You should now see the main GUI window with a 3D rendering canvas. Add and manipulate shapes using the buttons, mouse, keyboard, and available tools.
 
 ## 🧰 Tech Stack
 
